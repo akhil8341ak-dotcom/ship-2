@@ -1,0 +1,506 @@
+{
+  "users": [
+    {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "email": "demo.farmer@agriwise.ai",
+      "full_name": "Agronomist Akhil",
+      "preferred_language": "en",
+      "unit_system": "metric",
+      "created_at": "2026-10-06T06:08:27.099Z"
+    }
+  ],
+  "fields": [
+    {
+      "id": "cc1980b1-822c-47e0-8b60-3d9623c022ed",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "name": "Audit Test Parcel",
+      "location_name": "Test County",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "area_hectares": 3.5,
+      "soil_type": "Loamy",
+      "nitrogen_ppm": 120,
+      "phosphorus_ppm": 40,
+      "potassium_ppm": 160,
+      "ph_level": 6.8,
+      "organic_matter_pct": 3,
+      "irrigation_type": "Drip",
+      "created_at": "2026-10-06T06:58:22.815Z"
+    },
+    {
+      "id": "aeef152c-246b-499f-81ce-9ccd62c18afe",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "name": "Sunny Valley Block A",
+      "location_name": "Sacramento Basin, CA",
+      "latitude": 38.5816,
+      "longitude": -121.4944,
+      "area_hectares": 4.5,
+      "soil_type": "Loamy",
+      "nitrogen_ppm": 140,
+      "phosphorus_ppm": 45,
+      "potassium_ppm": 190,
+      "ph_level": 6.5,
+      "organic_matter_pct": 3.2,
+      "irrigation_type": "Drip",
+      "created_at": "2026-10-06T06:08:27.102Z"
+    },
+    {
+      "id": "8fa87796-4ec1-4386-a567-1a4822d7c6d6",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "name": "Highland Organic Terrace",
+      "location_name": "Punjab Valley Region",
+      "latitude": 30.901,
+      "longitude": 75.8573,
+      "area_hectares": 2.8,
+      "soil_type": "Clay",
+      "nitrogen_ppm": 95,
+      "phosphorus_ppm": 28,
+      "potassium_ppm": 130,
+      "ph_level": 7.2,
+      "organic_matter_pct": 2.1,
+      "irrigation_type": "Sprinkler",
+      "created_at": "2026-10-06T06:08:27.102Z"
+    }
+  ],
+  "crop_advisories": [
+    {
+      "id": "3bef1b8a-c6fc-4a56-b927-3978c74efaa3",
+      "field_id": "cc1980b1-822c-47e0-8b60-3d9623c022ed",
+      "season": "Summer",
+      "recommended_crops": [
+        {
+          "cropName": "Golden Maize (Zea mays)",
+          "suitabilityScore": 95,
+          "projectedYieldPerHectareKg": 9200,
+          "reasoning": "Optimal pH (6.8) and loamy soil structure allow deep root oxygenation and efficient NPK absorption.",
+          "economicViability": "High local grain market demand. Projected revenue $4,600/ha."
+        },
+        {
+          "cropName": "Roma / Cherry Tomatoes",
+          "suitabilityScore": 88,
+          "projectedYieldPerHectareKg": 17500,
+          "reasoning": "High potassium levels (160 PPM) promote strong flower formation and fruit firmness.",
+          "economicViability": "High return cash crop. Projected revenue $6,800/ha."
+        },
+        {
+          "cropName": "Black Gram / Chickpeas",
+          "suitabilityScore": 82,
+          "projectedYieldPerHectareKg": 3200,
+          "reasoning": "Excellent leguminous rotation crop to naturally fix atmospheric nitrogen into the root zone.",
+          "economicViability": "Low input fertilizer cost with stable crop price protection."
+        }
+      ],
+      "fertilizer_schedule": [
+        {
+          "growthStage": "Pre-planting Soil Basal",
+          "nitrogenKgHa": 18,
+          "phosphorusKgHa": 44,
+          "potassiumKgHa": 13,
+          "applicationMethod": "Incorporate with organic compost during bed preparation"
+        },
+        {
+          "growthStage": "Vegetative Peak Growth",
+          "nitrogenKgHa": 30,
+          "phosphorusKgHa": 0,
+          "potassiumKgHa": 10,
+          "applicationMethod": "Side-dressing along plant rows before watering"
+        },
+        {
+          "growthStage": "Flowering & Grain Filling",
+          "nitrogenKgHa": 12,
+          "phosphorusKgHa": 0,
+          "potassiumKgHa": 10,
+          "applicationMethod": "Foliar spray / fertigation via drip emitters"
+        }
+      ],
+      "irrigation_plan": {
+        "weeklyWaterRequirementLitersPerHa": 26000,
+        "wateringFrequencyDays": 3,
+        "criticalGrowthStages": [
+          "Seedling Emergence",
+          "Flowering Spike",
+          "Pod/Grain Fill Stage"
+        ],
+        "droughtMitigationTip": "Maintain 5cm organic straw mulch and apply antitranspirant spray if humidity drops below 40%."
+      },
+      "risk_assessment": {
+        "diseaseRisks": [
+          "Fungal Powdery Mildew",
+          "Bacterial Leaf Streak",
+          "Root Rot in poorly drained soil"
+        ],
+        "pestRisks": [
+          "Fall Armyworm",
+          "Aphid Colonies",
+          "Stem Borer"
+        ],
+        "climateRiskLevel": "Moderate",
+        "mitigationStrategy": "Deploy sticky yellow pheromone traps, maintain field margin sanitation, and adhere strictly to fertigation schedule."
+      },
+      "raw_ai_response": {
+        "recommendedCrops": [
+          {
+            "cropName": "Golden Maize (Zea mays)",
+            "suitabilityScore": 95,
+            "projectedYieldPerHectareKg": 9200,
+            "reasoning": "Optimal pH (6.8) and loamy soil structure allow deep root oxygenation and efficient NPK absorption.",
+            "economicViability": "High local grain market demand. Projected revenue $4,600/ha."
+          },
+          {
+            "cropName": "Roma / Cherry Tomatoes",
+            "suitabilityScore": 88,
+            "projectedYieldPerHectareKg": 17500,
+            "reasoning": "High potassium levels (160 PPM) promote strong flower formation and fruit firmness.",
+            "economicViability": "High return cash crop. Projected revenue $6,800/ha."
+          },
+          {
+            "cropName": "Black Gram / Chickpeas",
+            "suitabilityScore": 82,
+            "projectedYieldPerHectareKg": 3200,
+            "reasoning": "Excellent leguminous rotation crop to naturally fix atmospheric nitrogen into the root zone.",
+            "economicViability": "Low input fertilizer cost with stable crop price protection."
+          }
+        ],
+        "fertilizerSchedule": [
+          {
+            "growthStage": "Pre-planting Soil Basal",
+            "nitrogenKgHa": 18,
+            "phosphorusKgHa": 44,
+            "potassiumKgHa": 13,
+            "applicationMethod": "Incorporate with organic compost during bed preparation"
+          },
+          {
+            "growthStage": "Vegetative Peak Growth",
+            "nitrogenKgHa": 30,
+            "phosphorusKgHa": 0,
+            "potassiumKgHa": 10,
+            "applicationMethod": "Side-dressing along plant rows before watering"
+          },
+          {
+            "growthStage": "Flowering & Grain Filling",
+            "nitrogenKgHa": 12,
+            "phosphorusKgHa": 0,
+            "potassiumKgHa": 10,
+            "applicationMethod": "Foliar spray / fertigation via drip emitters"
+          }
+        ],
+        "irrigationPlan": {
+          "weeklyWaterRequirementLitersPerHa": 26000,
+          "wateringFrequencyDays": 3,
+          "criticalGrowthStages": [
+            "Seedling Emergence",
+            "Flowering Spike",
+            "Pod/Grain Fill Stage"
+          ],
+          "droughtMitigationTip": "Maintain 5cm organic straw mulch and apply antitranspirant spray if humidity drops below 40%."
+        },
+        "riskAssessment": {
+          "diseaseRisks": [
+            "Fungal Powdery Mildew",
+            "Bacterial Leaf Streak",
+            "Root Rot in poorly drained soil"
+          ],
+          "pestRisks": [
+            "Fall Armyworm",
+            "Aphid Colonies",
+            "Stem Borer"
+          ],
+          "climateRiskLevel": "Moderate",
+          "mitigationStrategy": "Deploy sticky yellow pheromone traps, maintain field margin sanitation, and adhere strictly to fertigation schedule."
+        }
+      },
+      "language": "en",
+      "created_at": "2026-10-06T06:58:23.354Z"
+    },
+    {
+      "id": "f9a03683-3cf4-439c-858c-8a2729054717",
+      "field_id": "8fa87796-4ec1-4386-a567-1a4822d7c6d6",
+      "season": "Summer",
+      "recommended_crops": [
+        {
+          "cropName": "Golden Maize (Zea mays)",
+          "suitabilityScore": 95,
+          "projectedYieldPerHectareKg": 9200,
+          "reasoning": "Optimal pH (7.2) and loamy soil structure allow deep root oxygenation and efficient NPK absorption.",
+          "economicViability": "High local grain market demand. Projected revenue $4,600/ha."
+        },
+        {
+          "cropName": "Roma / Cherry Tomatoes",
+          "suitabilityScore": 88,
+          "projectedYieldPerHectareKg": 17500,
+          "reasoning": "High potassium levels (130 PPM) promote strong flower formation and fruit firmness.",
+          "economicViability": "High return cash crop. Projected revenue $6,800/ha."
+        },
+        {
+          "cropName": "Black Gram / Chickpeas",
+          "suitabilityScore": 82,
+          "projectedYieldPerHectareKg": 3200,
+          "reasoning": "Excellent leguminous rotation crop to naturally fix atmospheric nitrogen into the root zone.",
+          "economicViability": "Low input fertilizer cost with stable crop price protection."
+        }
+      ],
+      "fertilizer_schedule": [
+        {
+          "growthStage": "Pre-planting Soil Basal",
+          "nitrogenKgHa": 22,
+          "phosphorusKgHa": 49,
+          "potassiumKgHa": 16,
+          "applicationMethod": "Incorporate with organic compost during bed preparation"
+        },
+        {
+          "growthStage": "Vegetative Peak Growth",
+          "nitrogenKgHa": 37,
+          "phosphorusKgHa": 0,
+          "potassiumKgHa": 12,
+          "applicationMethod": "Side-dressing along plant rows before watering"
+        },
+        {
+          "growthStage": "Flowering & Grain Filling",
+          "nitrogenKgHa": 15,
+          "phosphorusKgHa": 0,
+          "potassiumKgHa": 12,
+          "applicationMethod": "Foliar spray / fertigation via drip emitters"
+        }
+      ],
+      "irrigation_plan": {
+        "weeklyWaterRequirementLitersPerHa": 34000,
+        "wateringFrequencyDays": 5,
+        "criticalGrowthStages": [
+          "Seedling Emergence",
+          "Flowering Spike",
+          "Pod/Grain Fill Stage"
+        ],
+        "droughtMitigationTip": "Maintain 5cm organic straw mulch and apply antitranspirant spray if humidity drops below 40%."
+      },
+      "risk_assessment": {
+        "diseaseRisks": [
+          "Fungal Powdery Mildew",
+          "Bacterial Leaf Streak",
+          "Root Rot in poorly drained soil"
+        ],
+        "pestRisks": [
+          "Fall Armyworm",
+          "Aphid Colonies",
+          "Stem Borer"
+        ],
+        "climateRiskLevel": "Moderate",
+        "mitigationStrategy": "Deploy sticky yellow pheromone traps, maintain field margin sanitation, and adhere strictly to fertigation schedule."
+      },
+      "raw_ai_response": {
+        "recommendedCrops": [
+          {
+            "cropName": "Golden Maize (Zea mays)",
+            "suitabilityScore": 95,
+            "projectedYieldPerHectareKg": 9200,
+            "reasoning": "Optimal pH (7.2) and loamy soil structure allow deep root oxygenation and efficient NPK absorption.",
+            "economicViability": "High local grain market demand. Projected revenue $4,600/ha."
+          },
+          {
+            "cropName": "Roma / Cherry Tomatoes",
+            "suitabilityScore": 88,
+            "projectedYieldPerHectareKg": 17500,
+            "reasoning": "High potassium levels (130 PPM) promote strong flower formation and fruit firmness.",
+            "economicViability": "High return cash crop. Projected revenue $6,800/ha."
+          },
+          {
+            "cropName": "Black Gram / Chickpeas",
+            "suitabilityScore": 82,
+            "projectedYieldPerHectareKg": 3200,
+            "reasoning": "Excellent leguminous rotation crop to naturally fix atmospheric nitrogen into the root zone.",
+            "economicViability": "Low input fertilizer cost with stable crop price protection."
+          }
+        ],
+        "fertilizerSchedule": [
+          {
+            "growthStage": "Pre-planting Soil Basal",
+            "nitrogenKgHa": 22,
+            "phosphorusKgHa": 49,
+            "potassiumKgHa": 16,
+            "applicationMethod": "Incorporate with organic compost during bed preparation"
+          },
+          {
+            "growthStage": "Vegetative Peak Growth",
+            "nitrogenKgHa": 37,
+            "phosphorusKgHa": 0,
+            "potassiumKgHa": 12,
+            "applicationMethod": "Side-dressing along plant rows before watering"
+          },
+          {
+            "growthStage": "Flowering & Grain Filling",
+            "nitrogenKgHa": 15,
+            "phosphorusKgHa": 0,
+            "potassiumKgHa": 12,
+            "applicationMethod": "Foliar spray / fertigation via drip emitters"
+          }
+        ],
+        "irrigationPlan": {
+          "weeklyWaterRequirementLitersPerHa": 34000,
+          "wateringFrequencyDays": 5,
+          "criticalGrowthStages": [
+            "Seedling Emergence",
+            "Flowering Spike",
+            "Pod/Grain Fill Stage"
+          ],
+          "droughtMitigationTip": "Maintain 5cm organic straw mulch and apply antitranspirant spray if humidity drops below 40%."
+        },
+        "riskAssessment": {
+          "diseaseRisks": [
+            "Fungal Powdery Mildew",
+            "Bacterial Leaf Streak",
+            "Root Rot in poorly drained soil"
+          ],
+          "pestRisks": [
+            "Fall Armyworm",
+            "Aphid Colonies",
+            "Stem Borer"
+          ],
+          "climateRiskLevel": "Moderate",
+          "mitigationStrategy": "Deploy sticky yellow pheromone traps, maintain field margin sanitation, and adhere strictly to fertigation schedule."
+        }
+      },
+      "language": "en",
+      "created_at": "2026-10-06T06:48:10.531Z"
+    },
+    {
+      "id": "5caeea3a-7698-445b-9312-cd3ade230e7e",
+      "field_id": "aeef152c-246b-499f-81ce-9ccd62c18afe",
+      "season": "Summer",
+      "recommended_crops": [
+        {
+          "cropName": "Sweet Corn (Zea mays)",
+          "suitabilityScore": 94,
+          "projectedYieldPerHectareKg": 9500,
+          "reasoning": "Optimal soil NPK balance (140-45-190 PPM) and favorable pH of 6.5 provide ideal growth conditions.",
+          "economicViability": "High market demand. Estimated gross revenue of $4,800/ha."
+        },
+        {
+          "cropName": "Roma Tomatoes (Solanum lycopersicum)",
+          "suitabilityScore": 89,
+          "projectedYieldPerHectareKg": 18200,
+          "reasoning": "Drip irrigation system coupled with rich organic loamy soil yields strong root uptake.",
+          "economicViability": "Premium fresh market pricing. Estimated gross revenue of $7,200/ha."
+        },
+        {
+          "cropName": "Soybeans (Glycine max)",
+          "suitabilityScore": 84,
+          "projectedYieldPerHectareKg": 3800,
+          "reasoning": "Excellent crop rotation candidate to naturally fix atmospheric nitrogen into the root zone.",
+          "economicViability": "Stable futures contract prices. Low input cost requirement."
+        }
+      ],
+      "fertilizer_schedule": [
+        {
+          "growthStage": "Pre-Planting Soil Prep",
+          "nitrogenKgHa": 30,
+          "phosphorusKgHa": 45,
+          "potassiumKgHa": 20,
+          "applicationMethod": "Broadcast incorporation 10cm deep into soil bed"
+        },
+        {
+          "growthStage": "Vegetative Peak Growth",
+          "nitrogenKgHa": 60,
+          "phosphorusKgHa": 0,
+          "potassiumKgHa": 25,
+          "applicationMethod": "Side-dressing along drip irrigation line"
+        },
+        {
+          "growthStage": "Tasseling & Silking Stage",
+          "nitrogenKgHa": 40,
+          "phosphorusKgHa": 15,
+          "potassiumKgHa": 35,
+          "applicationMethod": "Foliar spray and fertigation via drip lines"
+        }
+      ],
+      "irrigation_plan": {
+        "weeklyWaterRequirementLitersPerHa": 32000,
+        "wateringFrequencyDays": 3,
+        "criticalGrowthStages": [
+          "Germination",
+          "Tasseling & Pollination",
+          "Kernel Milk Stage"
+        ],
+        "droughtMitigationTip": "Apply 5-7cm organic straw mulch to conserve moisture and maintain soil temp below 28°C."
+      },
+      "risk_assessment": {
+        "diseaseRisks": [
+          "Northern Corn Leaf Blight",
+          "Gray Leaf Spot"
+        ],
+        "pestRisks": [
+          "Corn Earworm",
+          "Western Corn Rootworm"
+        ],
+        "climateRiskLevel": "Low",
+        "mitigationStrategy": "Deploy resistant hybrid seeds and monitor sticky traps bi-weekly."
+      },
+      "raw_ai_response": {
+        "status": "success",
+        "model": "gemini-2.5-pro"
+      },
+      "language": "en",
+      "created_at": "2026-10-06T06:08:27.103Z"
+    }
+  ],
+  "disease_diagnostics": [
+    {
+      "id": "e33053de-f70e-4960-9e74-6c3467c922f2",
+      "field_id": "cc1980b1-822c-47e0-8b60-3d9623c022ed",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "image_url": "https://images.unsplash.com/photo-1592417817098-8f3d6eb1475a?auto=format&fit=crop&q=80&w=800",
+      "detected_condition": "Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 0.942,
+      "severity_level": "Moderate",
+      "symptoms": [
+        "Concentric ring dark brown spots on lower foliage",
+        "Yellow halo surrounding leaf lesions",
+        "Minor stem dark sunken lesions"
+      ],
+      "treatment_protocol": {
+        "organicControls": [
+          "Foliar spray of 1% Neem Oil extract with liquid soap surfactant",
+          "Bordeaux mixture (1% copper sulfate and lime) every 7-10 days"
+        ],
+        "chemicalControls": [
+          "Chlorothalonil 75% WP @ 2g/liter preventative spray",
+          "Azoxystrobin 23% SC systematic fungicide for active outbreaks"
+        ],
+        "preventativeSteps": [
+          "Remove and destroy infected lower leaves immediately",
+          "Transition to drip irrigation to prevent foliage dampness",
+          "Ensure 40cm plant spacing for adequate solar canopy penetration"
+        ]
+      },
+      "created_at": "2026-10-06T06:58:23.371Z"
+    },
+    {
+      "id": "dcfb441a-41de-432e-94a4-201780874232",
+      "field_id": "aeef152c-246b-499f-81ce-9ccd62c18afe",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "image_url": "https://images.unsplash.com/photo-1592417817098-8f3d6eb1475a?auto=format&fit=crop&q=80&w=800",
+      "detected_condition": "Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 0.964,
+      "severity_level": "Moderate",
+      "symptoms": [
+        "Irregular brown necrotic lesions with yellow halos on leaf surface",
+        "Early leaf defoliation on lower canopy",
+        "Stunted vine elongation"
+      ],
+      "treatment_protocol": {
+        "organicControls": [
+          "Apply Copper Octanoate (Soap) spray every 7 days during damp conditions",
+          "Neem oil (0.5% concentration) application at dawn or dusk"
+        ],
+        "chemicalControls": [
+          "Chlorothalonil 75% WP spray at 2.0g/L water ratio",
+          "Mancozeb 75% DF preventative broad-spectrum fungicide"
+        ],
+        "preventativeSteps": [
+          "Prune lower leaves up to 30cm off soil line to improve airflow",
+          "Avoid overhead irrigation; switch exclusively to drip system",
+          "Practice 3-year crop rotation with non-solanaceous crops"
+        ]
+      },
+      "created_at": "2026-10-06T06:08:27.103Z"
+    }
+  ]
+}
